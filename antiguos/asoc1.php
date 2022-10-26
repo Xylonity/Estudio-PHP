@@ -6,6 +6,6 @@ echo "[\n";
 foreach($colores as $a) {
     echo "$a "
 }
-
+<div class=""></div>
 
 ?>
