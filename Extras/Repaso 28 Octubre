@@ -1,0 +1,100 @@
+<?php 
+
+echo "[1] Cursos del cma\n";
+echo "[2] Bucles\n";
+echo "[3] Array\n";
+echo "[4] Contador\n";
+echo "[5] Salir\n\n";
+
+echo "> ";
+$numprin = (int) readline();
+
+switch($numprin) {
+    case 1:
+        echo "Cuántos años tienes? ";
+        $a = (int) readline();
+            if ($a <= 5) {
+                echo "Eres de RPAE";
+            }
+            else if (($a > 5) && ($a <= 18)) {
+                echo "Eres de AF";
+            }
+            else
+                echo "Eres de ASIR";
+
+        break;
+
+    case 2:
+        echo "Dime un valor inicial para crear el bucle (while y for): ";
+        $a = (int) readline();
+        echo "Dime el valor máximo: ";
+        $b = (int) readline();
+            while ( $a <= $b) {
+                echo "Hola!\n";
+                $a++;
+            }
+        sleep(1);
+        echo "Dime el valor máximo para el bucle for: ";
+        $c = (int) readline();
+            for ( $i=1 ; $i<=$c ; $i++) {
+                echo "Adiós!\n";
+            }
+
+        break;
+
+    case 3:
+        $a = ["Hola", "Adiós", "Avi"];
+        $b = [-3,-2,-1,0,1,2,3,4,5,6];
+            echo "$a[0]\n";
+            echo "$a[1]\n";
+            echo "$a[2]\n";
+            
+            foreach ($a as $x) {
+                if (end($a) == $x) {
+                    echo "$x";
+                }
+                else {
+                    echo "$x | ";
+                }
+            }
+
+            printf("\nLa cantidad de valores que hay en el array es: ".count($a));
+
+            echo "\n\n************************\n";
+            $sum1 = 0;
+            $sum2 = 0;
+            foreach($b as $z) {
+                if ($z < 0) {
+                    $sum1++;
+                }
+                else if ($z > 0) {
+                    $sum2++;
+                }
+            }
+            echo "\nCantidad de números negativos: ".$sum1;
+            echo "\nCantidad de números positivos: ".$sum2;
+
+        break;
+
+    case 4:
+        printf("Dame una cantidad de valores: ");
+        $a = (int) readline();
+        printf("Dame un número para hacer un salto de línea: ");
+        $b = (int) readline();
+        $c = 0;
+        for ( $i=1 ; $i <=$a ; $i++ ) {
+            echo "*";
+            $c++;
+            if ( $c == $b ) {
+                printf("\n");
+                $c = 0;
+            }
+        }
+
+        break;
+
+    default:
+        echo "Escribe un valor correcto";
+}
+
+?>
