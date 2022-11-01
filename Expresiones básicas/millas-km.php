@@ -2,6 +2,7 @@
 
 echo "CONVERSOR Millas-Kilómetros\n\n[1]Kilómetros-Millas\n[2]Millas-Kilómetros\n\n> ";
 $n = (int) readline();
+
 if ($n == 1) {
     echo "Escriba la cantidad que desee: ";
     $valor1 = (float) readline();

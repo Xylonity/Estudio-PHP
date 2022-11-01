@@ -6,6 +6,7 @@ echo "EJ4\n\n[x]Dime dos números (por separado)\n\n> ";
 $n = (int) readline();
 echo "\n> ";
 $n2 = (int) readline();
+
 if ($n === $n2) {
         echo "Los dos números son iguales";
         break 1;
