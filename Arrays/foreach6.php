@@ -1,4 +1,5 @@
 <?php
+
 $datos = ["rojo","azul","verde","negro","naranja","rosa"];
 
 for($i = 0; $i < count($datos); $i++ ){
