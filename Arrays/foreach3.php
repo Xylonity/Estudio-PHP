@@ -1,5 +1,7 @@
 <?php
 
+# Manuel Serrano
+
     // array
     $datos = ["rojo", "azul", "verde", "morado", "violeta", "rosa", "magenta", "naranja"];
 

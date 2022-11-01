@@ -1,5 +1,7 @@
 <?php
 
+# Manuel Serrano
+
 $valores = [1,10,20,50,0,2,5,-9,-6,-2];
 
 $sumpos=0;

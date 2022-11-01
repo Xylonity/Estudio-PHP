@@ -1,5 +1,7 @@
 <?php
 
+# Manuel Serrano
+
 $nums = [1,2,3,4,0,-1,-2,-3,-4,-5];
 
 echo "\nvalores antes del cambio:\n";

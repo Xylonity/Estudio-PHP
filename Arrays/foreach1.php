@@ -1,5 +1,7 @@
 <?php
 
+# Manuel Serrano
+
 $colores = ["azul", "verde", "rojo"];
 echo "[\n";
 
