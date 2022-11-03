@@ -9,12 +9,18 @@ $array=[ "FC Barcelona" => 85000,
         "Valencia FC" => 40000,
 ];
 echo "<inicio>\n";
+
+$con = 0;
 foreach ($array as $key => $value) {
     echo "\t<equipo><nombre>";
     printf("%s</nombre><socios>%d", $key, $value);
     echo "</socios></equipo>";
-    echo "\n\t<*|*>\n";
+    $con++;
+    if ($con < count($array)) {
+        echo "\n\t<*|*>\n";
+    } 
+    
 }
-echo "</fin>";
+echo "\n</fin>";
 
 ?>
